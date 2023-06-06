@@ -1,0 +1,63 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "my-email-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myEmail/MyEmailWebPart.js",
+          "manifest": "./src/webparts/myEmail/MyEmailWebPart.manifest.json"
+        }
+      ]
+    },
+    "my-account-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myAccount/MyAccountWebPart.js",
+          "manifest": "./src/webparts/myAccount/MyAccountWebPart.manifest.json"
+        }
+      ]
+    },
+    "my-planner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myPlanner/MyPlannerWebPart.js",
+          "manifest": "./src/webparts/myPlanner/MyPlannerWebPart.manifest.json"
+        }
+      ]
+    },
+    "manager-profile-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/managerProfile/ManagerProfileWebPart.js",
+          "manifest": "./src/webparts/managerProfile/ManagerProfileWebPart.manifest.json"
+        }
+      ]
+    },
+    "my-daily-task-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myDailyTask/MyDailyTaskWebPart.js",
+          "manifest": "./src/webparts/myDailyTask/MyDailyTaskWebPart.manifest.json"
+        }
+      ]
+    },
+    "to-do-prachi-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/toDoPrachi/ToDoPrachiWebPart.js",
+          "manifest": "./src/webparts/toDoPrachi/ToDoPrachiWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MyEmailWebPartStrings": "lib/webparts/myEmail/loc/{locale}.js",
+    "MyAccountWebPartStrings": "lib/webparts/myAccount/loc/{locale}.js",
+    "MyPlannerWebPartStrings": "lib/webparts/myPlanner/loc/{locale}.js",
+    "ManagerProfileWebPartStrings": "lib/webparts/managerProfile/loc/{locale}.js",
+    "MyDailyTaskWebPartStrings": "lib/webparts/myDailyTask/loc/{locale}.js",
+    "ToDoPrachiWebPartStrings": "lib/webparts/toDoPrachi/loc/{locale}.js"
+  }
+}
